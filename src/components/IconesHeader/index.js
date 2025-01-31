@@ -1,4 +1,3 @@
-import './estilo.css'
 import perfil from '../../imagem/perfil.svg'
 import sacola from '../../imagem/sacola.svg'
 import styled from 'styled-components'
