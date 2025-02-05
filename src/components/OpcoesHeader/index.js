@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
 
 const OpcoesConteiner = styled.ul`
   display: flex;
@@ -22,7 +23,7 @@ function OpcoesHeader() {
     return (
         <OpcoesConteiner>
             {textoOpcoes.map ((texto) => (
-                <OpcaoConteiner><p>{texto}</p></OpcaoConteiner>
+                <Link to={`${texto.toLowerCase}`}><OpcaoConteiner><p>{texto}</p></OpcaoConteiner></Link>
             ))}
         </OpcoesConteiner>
     )
